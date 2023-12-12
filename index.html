@@ -1,0 +1,791 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+    
+    
+      
+        <title>MTA4027 MIDTERM</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#network-security" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="MTA4027 MIDTERM" class="md-header__button md-logo" aria-label="MTA4027 MIDTERM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MTA4027 MIDTERM
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Network Security
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Network Security
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="MTA4027 MIDTERM" class="md-nav__button md-logo" aria-label="MTA4027 MIDTERM" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MTA4027 MIDTERM
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Network Security
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Network Security
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition-and-importance-of-network-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition and Importance of Network Security
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definition and Importance of Network Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-keywords" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Keywords
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-network-security-attacks-and-their-countermeasures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Network Security Attacks and Their Countermeasures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Network Security Attacks and Their Countermeasures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#physical-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Physical Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unauthorized-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unauthorized Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-theft-or-damage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware Theft or Damage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countermeasures-of-physical-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Countermeasures of Physical Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Countermeasures of Physical Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#access-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Access Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmental-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environmental Controls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-and-redundancy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backup and Redundancy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-based-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software-Based Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software-Based Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#malware-malicious-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Malware (Malicious Software)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phishing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phishing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zero-day-exploits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zero-Day Exploits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countermeasures-of-sofware-based-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Countermeasures of Sofware-Based Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Countermeasures of Sofware-Based Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#antivirus-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Antivirus Software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-education" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Education
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patching-and-updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patching and Updating
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-based-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network-Based Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network-Based Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#denial-of-service-dos-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Denial of Service (DoS) Attacks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#man-in-the-middle-mitm-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Man-in-the-Middle (MitM) Attacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countermeasures-of-network-based-attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Countermeasures of Network-Based Attacks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Countermeasures of Network-Based Attacks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#firewalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firewalls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intrusion-detectionprevention-systems-idsips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intrusion Detection/Prevention Systems (IDS/IPS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encryption
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referances" class="md-nav__link">
+    <span class="md-ellipsis">
+      Referances
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      About Me
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="network-security">Network Security</h1>
+<h2 id="definition-and-importance-of-network-security">Definition and Importance of Network Security</h2>
+<p>Network security refers to the set of measures and precautions taken to protect the integrity, confidentiality, and availability of computer networks and the data transmitted over them. </p>
+<p>It is the field of cybersecurity focused on protecting computer networks from threats. Network security has three chief aims: to prevent unauthorized access to network resources; to detect and stop cyberattacks and security breaches in progress; and to ensure that authorized users have secure access to the network resources they need, when they need them.</p>
+<p>It involves the implementation of various technologies, strategies, and policies to safeguard against unauthorized access, attacks, and potential damage.</p>
+<h3 id="some-keywords">Some Keywords</h3>
+<ul>
+<li>Confidentiality: Protecting sensitive information from unauthorized access ensures that only authorized individuals can access and view the data.</li>
+<li>Integrity: Ensuring the accuracy and reliability of data by preventing unauthorized modification or tampering.</li>
+<li>Availability: Ensuring that network resources and services are consistently available to authorized users, preventing disruptions or downtime.</li>
+<li>Authentication: Verifying the identity of users and devices to ensure that only legitimate entities have access.</li>
+<li>Authorization: Controlling access to resources based on user permissions and roles.</li>
+</ul>
+<h2 id="common-network-security-attacks-and-their-countermeasures">Common Network Security Attacks and Their Countermeasures</h2>
+<h3 id="physical-attacks">Physical Attacks</h3>
+<h4 id="unauthorized-access">Unauthorized Access</h4>
+<p>The act of someone entering a physical space where computer systems, servers, networking equipment, or sensitive data are stored or processed, without the permission of the organization or individuals responsible for those resources. This could happen in various ways:</p>
+<ul>
+<li>Bypassing Physical Security Measures: Finding ways to circumvent physical security measures that protect the premises such as breaking locks, disabling alarms, or exploiting vulnerabilities in access control systems.</li>
+<li>Tailgating: Following closely behind an authorized individual to gain access to a secured area without using proper authentication methods.</li>
+<li>Social Engineering: Manipulating or deceiving individuals with legitimate access to the facility into providing them access by pretending to be a trusted person or using psychological tactics to trick employees.</li>
+<li>Insider Threats: Abusing their privileges as employees/contractors with legitimate access for intentionally or unintentionally allowing unauthorized individuals to enter secure areas. </li>
+</ul>
+<h4 id="hardware-theft-or-damage">Hardware Theft or Damage</h4>
+<p>The actions where an unauthorized individual deliberately takes servers, routers, switches, computers, or other network devices out of their assigned locations, destroys them, or impairs their ability to function. Some consequences of hardware theft or damage are:</p>
+<ul>
+<li>Data Loss: If stolen hardware contains sensitive data, its loss can lead to a compromise of confidential information.</li>
+<li>Service Disruption: Damage to critical network components can result in downtime by disrupting services and affecting operations</li>
+<li>Financial Loss: The cost of replacing stolen or damaged hardware, as well as the potential financial impact of business disruption, can be significant.</li>
+</ul>
+<h3 id="countermeasures-of-physical-attacks">Countermeasures of Physical Attacks</h3>
+<h4 id="access-controls">Access Controls</h4>
+<p>Implementing secure physical access controls such as biometric scanners, card readers, and surveillance.</p>
+<h4 id="environmental-controls">Environmental Controls</h4>
+<p>Ensuring that data centers have adequate physical security, such as locked doors, security personnel, and secure enclosures.</p>
+<h4 id="backup-and-redundancy">Backup and Redundancy</h4>
+<p>Regularly backing up data and having redundant hardware to mitigate the impact of theft or damage.</p>
+<h3 id="software-based-attacks">Software-Based Attacks</h3>
+<h4 id="malware-malicious-software">Malware (Malicious Software)</h4>
+<p>An umbrella term includes a variety of harmful software types designed to disrupt, cause harm, exploit vulnerabilities, or gain unauthorized access to computer systems and data. Some types of malwares are:</p>
+<ul>
+<li>Viruses: Malwares that attach themselves to legitimate executable files in order to spread and infect other files when the infected program is executed.</li>
+<li>Worms: Malwares that replicate itself and spread across networks and systems by often exploiting vulnerabilities.</li>
+<li>Trojan Horses: Malwares disguised as legitimate software to trick users into installing it to perform a range of malicious activities.</li>
+<li>Spyware: Malwares designed to secretly collect and transmit user information without the consent of the user, often for advertising or identity theft purposes.</li>
+<li>Ransomware: Malwares that encrypt files on a victim's system and demand a ransom for the decryption key.</li>
+<li>Adware: Malwares that display unwanted advertisements, often installed along with legitimate software.</li>
+</ul>
+<h4 id="phishing">Phishing</h4>
+<p>Type of social engineering attack where cybercriminals use fraudulent emails, messages, or websites to trick people into divulging sensitive information, such as usernames, passwords, credit card numbers, or other personal data.</p>
+<p>Typically involves deceptive communication where attackers impersonate trustworthy organizations to establish a false sense of legitimacy and make it challenging for people to differentiate between real and fraudulent communications or use urgency and fear tactics and compel recipients to take immediate actions to avoid perceived consequences. </p>
+<h4 id="zero-day-exploits">Zero-Day Exploits</h4>
+<p>Targets a security vulnerability that is not yet documented or acknowledged by the software vendor or security community. Since the vulnerability is unknown, there is no official patch available to fix the security flaw. Cybercriminals act fast to take advantage of this time window to gain unauthorized access, steal data, or install malware. "Zero-day" refers to the fact that there are zero days of protection between the discovery and the first attack.</p>
+<h3 id="countermeasures-of-sofware-based-attacks">Countermeasures of Sofware-Based Attacks</h3>
+<h4 id="antivirus-software">Antivirus Software</h4>
+<p>A security program designed to detect, prevent, and remove malicious software, including viruses, worms, trojan horses, and other types of malwares. Regular updates are essential to keep this database current and effective against the latest threats. The key functions of Antivirus Software are:</p>
+<ul>
+<li>Scanning: They regularly scan files, programs, and the overall system for known patterns or signatures of malicious code.</li>
+<li>Behavioral Analysis: They identify suspicious behavior that may indicate the presence of malware, even if the specific code is not yet recognized.</li>
+<li>Quarantine and Removal: They quarantine the infected files when malware is detected to prevent further spread and then remove or clean the malicious code.</li>
+<li>Real-Time Protection: They provide real-time protection, monitoring system activities as they occur and blocking or alerting users to potential threats.</li>
+</ul>
+<p>There are some limitations of Antivirus Software since the traditional antivirus relies on known signatures, which may not detect new or zero-day threats and may occasionally produce false positives (incorrectly identifying safe files as threats) or false negatives (failing to detect actual threats). Combine antivirus software with other security measures, such as firewalls, intrusion detection/prevention systems, and user education, for a comprehensive defense strategy.</p>
+<h4 id="user-education">User Education</h4>
+<p>Training users to recognize and avoid phishing attempts.</p>
+<h4 id="patching-and-updating">Patching and Updating</h4>
+<p>Regularly updating software and systems to patch known vulnerabilities.</p>
+<h3 id="network-based-attacks">Network-Based Attacks</h3>
+<h4 id="denial-of-service-dos-attacks">Denial of Service (DoS) Attacks</h4>
+<p>Type of cyberattack that aims to disrupt the normal functioning of a computer system, network, or service by overwhelming it with an excessive amount of traffic, requests, or by exploiting vulnerabilities to exhaust its resources. Methods used in DoS Attacks are:</p>
+<ul>
+<li>Ping Flood: Sending a large number of ICMP (Internet Control Message Protocol) echo request packets to the target, overwhelming its ability to respond to legitimate requests.</li>
+<li>SYN/ACK Flood: Exploiting the three-way handshake process of TCP by sending a flood of SYN (synchronize) or ACK (acknowledge) packets to consume the target's resources.</li>
+<li>HTTP Flood: Overloading a web server by sending a massive number of HTTP requests, often using botnets or other distributed methods.
+DNS Amplification: Exploiting misconfigured DNS servers to amplify the volume of traffic sent to the target, overwhelming its resources.</li>
+</ul>
+<h4 id="man-in-the-middle-mitm-attacks">Man-in-the-Middle (MitM) Attacks</h4>
+<p>Type of cyberattack where an unauthorized third-party intercepts and possibly manipulates the communication between two parties without their knowledge. Methods used in MitM Attacks are:</p>
+<ul>
+<li>Packet Sniffing: Capturing and analyzing network traffic in order to obtain access to data that is being transmitted between two parties without encryption.</li>
+<li>DNS Spoofing: Manipulating the Domain Name System (DNS) to redirect visitors to fraudulent websites controlled by the attacker.</li>
+<li>Wi-Fi Eavesdropping: Intercepting communication on unsecured Wi-Fi networks, where data is transmitted unencrypted.</li>
+<li>SSL Stripping: Downgrading secure HTTPS connections to unencrypted HTTP, giving the attacker access to confidential data.</li>
+<li>Session Hijacking: Stealing or taking over an authenticated session to impersonate the authorized user during the communication.</li>
+</ul>
+<h3 id="countermeasures-of-network-based-attacks">Countermeasures of Network-Based Attacks</h3>
+<h4 id="firewalls">Firewalls</h4>
+<p>A network security device or software that acts as a barrier between a trusted internal network and untrusted external networks, such as the internet. Its primary purpose is to monitor, filter, and control incoming and outgoing network traffic based on predetermined security rules. Key functions of Firewalls are:</p>
+<ul>
+<li>Packet Filtering: Inspecting individual packets of data based on predetermined rules. Packets that meet the criteria defined in the rules are allowed to pass, while others are blocked.</li>
+<li>Stateful Inspection: Examining the context of the traffic to determine whether it is part of an established connection. </li>
+<li>Proxying: Receiving requests from internal users, forward them to external servers on behalf of the users, and then relay the responses back to the users.</li>
+<li>Network Address Translation (NAT): Translating private internal IP addresses to a single public IP address, enhancing the security and privacy of internal networks.</li>
+</ul>
+<h4 id="intrusion-detectionprevention-systems-idsips">Intrusion Detection/Prevention Systems (IDS/IPS)</h4>
+<p>IDS: A security tool that analyzes network activities to look for indications of unauthorized access, security policy violations, or malicious activities. It generates alerts or notifications to initiate further investigation when suspicious activity is detected.</p>
+<p>IPS: An advanced security tool that actively blocks possible security threats in addition to detecting them. This can involve automatically modifying firewall rules, blocking malicious traffic, or executing other preventive actions to stop an ongoing attack.</p>
+<h4 id="encryption">Encryption</h4>
+<p>A fundamental cybersecurity practice that involves encoding data in a way that makes it unintelligible to unauthorized parties during transmission by using algorithms and cryptographic keys. This transformation ensures that even if intercepted, the data remains confidential and secure. Key components of Encryption are:</p>
+<ul>
+<li>Data in Transit: The information moving between two parties over a network.</li>
+<li>Ciphertext: The encrypted form of the data that is transmitted, appears as a random sequence of characters and is meaningless without the appropriate decryption key.</li>
+<li>Encryption Algorithm: A set of mathematical operations used to transform plaintext into ciphertext (AES, RSA, and Triple DES).</li>
+<li>Cryptographic Keys: Keys are used in the encryption and decryption processes. The encryption key transforms plaintext into ciphertext, and the decryption key reverses the process.</li>
+</ul>
+<h2 id="referances">Referances</h2>
+<p>Pawar, Mohan V., and J. Anuradha. "Network security and types of attacks in network." Procedia Computer Science 48 (2015): 503-506.</p>
+<p>Deogirikar, Jyoti, and Amarsinh Vidhate. "Security attacks in IoT: A survey." 2017 International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud)(I-SMAC). IEEE, 2017.</p>
+<p>Li, Bin, et al. "Mimic encryption system for network security." IEEE Access 6 (2018): 50468-50487.</p>
+<h2 id="about-me">About Me</h2>
+<p>İzem Zaim</p>
+<p>19290467</p>
+<p><a href="https://github.com/izemz/Network-Security-Attacks-and-Countermeasures">Project on My Github</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+    
+  </body>
+</html>
